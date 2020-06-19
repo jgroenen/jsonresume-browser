@@ -1,0 +1,200 @@
+/* for quick find-replace: the highlight color is #0099D4 */
+
+html, body {
+    height: 100%;
+}
+body {
+    font-family: Arial;
+    font-size: 100%;
+    font-weight: 100;
+    color: #222;
+}
+.showoff {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 280px;
+    margin-bottom: 10px;
+}
+h1 {
+    font-size: 2em;
+    color: #0099D4;
+    margin: 0.4em 0;
+    font-family: "Julius Sans One";
+    font-weight: 900;
+}
+strong {
+    color: #0099D4;
+}
+h2 {
+    font-size: 1.6em;
+    margin: 0.2em 0;
+    color: #445;
+    font-family: "Julius Sans One";
+    font-weight: 400;
+}
+h3 {
+    font-size: 0.9em;
+    font-weight: 100;
+    color: #445;
+}
+section header h1 {
+    font-size: 1em;
+}
+section header h2 {
+    font-size: 1em;
+}
+section header p {
+    color: #999;
+}
+a {
+    /* text-decoration: none; */
+    color: #0099D4;
+}
+p {
+    max-width: 40em;
+}
+ul {
+   list-style-type: none;
+   padding: 0;
+}
+li {
+    margin: 4px 0;
+}
+.tag {
+    display: inline-block;
+    background: #0099D4;
+    color: #fff;
+    margin: 4px;
+    padding: 4px 6px;
+    border-radius: 2px;
+}
+.icon {
+    vertical-align: -6px;
+    margin-right: 10px;
+}
+.clear {
+    clear: both;
+}
+.wrapper {
+    max-width: 940px;
+    margin: auto;
+    clear: both;
+}
+.wrapper > header {
+    float: left;
+    width: 260px;
+    /*page-break-after: always;*/
+}
+.wrapper > header h1,
+.wrapper > header h2,
+.wrapper > header h3 {
+    text-align: center;
+}
+.wrapper > header .photo {
+    display: block;
+    margin: 10px auto;
+}
+.wrapper > header .qr {
+    display: block;
+    margin: 20px 0 40px 34px;
+}
+.wrapper > header .icon {
+    margin-right: 4px;
+}
+.wrapper > header > p {
+    margin: 6px 0;
+}
+.wrapper > main {
+    float: right;
+    max-width: 640px;
+    border-left: 1px solid #999;
+    padding-left: 20px;
+    margin-bottom: 40px;
+}
+.wrapper > main > section {
+    clear: left;
+}
+.wrapper > main > section > h1 {
+    font-size: 1.6em;
+    margin-top: 50px;
+}
+.wrapper > main > section > section {
+    clear: left;
+    margin-top: 20px;
+}
+.wrapper > main > section > section > header {
+    float: left;
+    margin-right: 20px;
+    width: 200px;
+}
+.wrapper > main > section > section > header > p {
+    font-size: 0.8em;
+    margin: 0.4em 0;
+}
+.wrapper > main > section > section > main {
+    float: left;
+    max-width: 420px;
+}
+.wrapper > main > section > section > main > p {
+    margin: 0.4em 0;
+}
+
+@media all and (max-width: 960px) {
+    .wrapper {
+        max-width: 640px;
+        margin: auto;
+    }
+    .wrapper > header {
+        float: none;
+        width: auto;
+    }
+    .wrapper > main {
+        float: none;
+        max-width: auto;
+        border: 0;
+        padding: 0;
+    }
+    .icon {
+        margin-left: 0;
+    }
+    .showoff {
+        height: 200px;
+    }
+    .contact p {
+        margin: 0;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .wrapper {
+        width: 300px;
+        margin: auto;
+    }
+    .no-mobile {
+        display: none !important;
+    }
+}
+
+@media print {
+    .no-print {
+        display: none !important;
+    }
+    .photo {
+        float: right;
+    }
+    a {
+        color: #222;
+    }
+    .contact {
+        float: left;
+        margin-bottom: 20px;
+    }
+    .qr {
+        float: right;
+    }
+    .wrapper > main > section > section > main > p {
+        margin: 0.4em 0;
+        font-size: 0.8em;
+    }
+}
